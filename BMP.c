@@ -117,8 +117,9 @@ char sf[]="1.bmp",sf2[]="res.bmp";
 				buf[j*3+0]=h.v[j][i][0];
 				buf[j*3+1]=h.v[j][i][1];
 				buf[j*3+2]=h.v[j][i][2];
-				fwrite(buf,lbuf,1,f);
+				
 			}
+			fwrite(buf,lbuf,1,f);
 		}
 	free(h.v);
 	h.v=NULL;
